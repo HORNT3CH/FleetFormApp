@@ -26,16 +26,17 @@ Partial Class Form1
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TripNumbersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VendorInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EnterTripNumberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PickupRequestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VendorInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EnterVendorInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.TripNumbersToolStripMenuItem, Me.VendorInformationToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.TripNumbersToolStripMenuItem, Me.VendorInformationToolStripMenuItem, Me.ReportsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -52,7 +53,7 @@ Partial Class Form1
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(93, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'TripNumbersToolStripMenuItem
@@ -62,6 +63,18 @@ Partial Class Form1
         Me.TripNumbersToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
         Me.TripNumbersToolStripMenuItem.Text = "Trip Numbers"
         '
+        'EnterTripNumberToolStripMenuItem
+        '
+        Me.EnterTripNumberToolStripMenuItem.Name = "EnterTripNumberToolStripMenuItem"
+        Me.EnterTripNumberToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.EnterTripNumberToolStripMenuItem.Text = "Enter Trip Number"
+        '
+        'PickupRequestToolStripMenuItem
+        '
+        Me.PickupRequestToolStripMenuItem.Name = "PickupRequestToolStripMenuItem"
+        Me.PickupRequestToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.PickupRequestToolStripMenuItem.Text = "Pickup Request"
+        '
         'VendorInformationToolStripMenuItem
         '
         Me.VendorInformationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EnterVendorInformationToolStripMenuItem})
@@ -69,23 +82,17 @@ Partial Class Form1
         Me.VendorInformationToolStripMenuItem.Size = New System.Drawing.Size(122, 20)
         Me.VendorInformationToolStripMenuItem.Text = "Vendor Information"
         '
-        'EnterTripNumberToolStripMenuItem
-        '
-        Me.EnterTripNumberToolStripMenuItem.Name = "EnterTripNumberToolStripMenuItem"
-        Me.EnterTripNumberToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EnterTripNumberToolStripMenuItem.Text = "Enter Trip Number"
-        '
-        'PickupRequestToolStripMenuItem
-        '
-        Me.PickupRequestToolStripMenuItem.Name = "PickupRequestToolStripMenuItem"
-        Me.PickupRequestToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.PickupRequestToolStripMenuItem.Text = "Pickup Request"
-        '
         'EnterVendorInformationToolStripMenuItem
         '
         Me.EnterVendorInformationToolStripMenuItem.Name = "EnterVendorInformationToolStripMenuItem"
         Me.EnterVendorInformationToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.EnterVendorInformationToolStripMenuItem.Text = "Enter Vendor Information"
+        '
+        'ReportsToolStripMenuItem
+        '
+        Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'Form1
         '
@@ -96,6 +103,7 @@ Partial Class Form1
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Fleet Scheduler"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -111,4 +119,5 @@ Partial Class Form1
     Friend WithEvents PickupRequestToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VendorInformationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EnterVendorInformationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportsToolStripMenuItem As ToolStripMenuItem
 End Class

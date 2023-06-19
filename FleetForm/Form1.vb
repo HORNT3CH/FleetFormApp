@@ -23,4 +23,11 @@
         n.MdiParent = Me
         n.Show()
     End Sub
+
+    Private Sub ReportsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportsToolStripMenuItem.Click
+        Dim n As New ReportDashboard
+        Me.IsMdiContainer = True
+        n.MdiParent = Me
+        n.Show()
+    End Sub
 End Class

@@ -25,13 +25,13 @@ Partial Class VendorInfo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbVendor1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmbVendor2 = New System.Windows.Forms.ComboBox()
+        Me.btnEditEstTripTime = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cmbVendor3 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -70,13 +70,14 @@ Partial Class VendorInfo
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Edit Stop Information"
         '
-        'ComboBox1
+        'cmbVendor1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(149, 64)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(226, 23)
-        Me.ComboBox1.TabIndex = 3
+        Me.cmbVendor1.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbVendor1.FormattingEnabled = True
+        Me.cmbVendor1.Location = New System.Drawing.Point(149, 64)
+        Me.cmbVendor1.Name = "cmbVendor1"
+        Me.cmbVendor1.Size = New System.Drawing.Size(226, 25)
+        Me.cmbVendor1.TabIndex = 3
         '
         'Label4
         '
@@ -98,23 +99,24 @@ Partial Class VendorInfo
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Vendor Name 2"
         '
-        'ComboBox2
+        'cmbVendor2
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(149, 93)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(226, 23)
-        Me.ComboBox2.TabIndex = 6
+        Me.cmbVendor2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbVendor2.FormattingEnabled = True
+        Me.cmbVendor2.Location = New System.Drawing.Point(149, 93)
+        Me.cmbVendor2.Name = "cmbVendor2"
+        Me.cmbVendor2.Size = New System.Drawing.Size(226, 25)
+        Me.cmbVendor2.TabIndex = 6
         '
-        'Button1
+        'btnEditEstTripTime
         '
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(448, 64)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(208, 32)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Edit Estimated Trip Time"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEditEstTripTime.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnEditEstTripTime.Location = New System.Drawing.Point(448, 64)
+        Me.btnEditEstTripTime.Name = "btnEditEstTripTime"
+        Me.btnEditEstTripTime.Size = New System.Drawing.Size(208, 32)
+        Me.btnEditEstTripTime.TabIndex = 7
+        Me.btnEditEstTripTime.Text = "Edit Estimated Trip Time"
+        Me.btnEditEstTripTime.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -126,13 +128,14 @@ Partial Class VendorInfo
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Vendor Name"
         '
-        'ComboBox3
+        'cmbVendor3
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(149, 184)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(226, 23)
-        Me.ComboBox3.TabIndex = 9
+        Me.cmbVendor3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbVendor3.FormattingEnabled = True
+        Me.cmbVendor3.Location = New System.Drawing.Point(149, 184)
+        Me.cmbVendor3.Name = "cmbVendor3"
+        Me.cmbVendor3.Size = New System.Drawing.Size(226, 25)
+        Me.cmbVendor3.TabIndex = 9
         '
         'Button2
         '
@@ -172,13 +175,13 @@ Partial Class VendorInfo
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.cmbVendor3)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.btnEditEstTripTime)
+        Me.Controls.Add(Me.cmbVendor2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbVendor1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -192,13 +195,13 @@ Partial Class VendorInfo
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbVendor1 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents cmbVendor2 As ComboBox
+    Friend WithEvents btnEditEstTripTime As Button
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cmbVendor3 As ComboBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
